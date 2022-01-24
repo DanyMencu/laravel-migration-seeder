@@ -19,11 +19,11 @@ class CreateTripsTable extends Migration
             $table->string('city_destination', 50);
             $table->string('state', 50);
             $table->smallInteger('price');
-            $table->date('date-departure');
-            $table->date('date-return');
+            $table->date('date_departure');
+            $table->date('date_return');
             $table->text('description');
-            $table->tinyInteger('minimum-partecipants');
-            $table->boolean('under-18')->default(0);
+            $table->tinyInteger('minimum_partecipants');
+            $table->boolean('under_18')->default(0);
             $table->boolean('available')->default(1);
             $table->timestamps();
         });
